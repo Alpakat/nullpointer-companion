@@ -1,0 +1,52 @@
+.background {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #000;
+}
+
+
+.vectorContainer {
+    position: fixed;
+    /* filter: blur(10vw); */
+    opacity: 0.4;
+    width: 50vw;
+    height: 50vw;
+    z-index: 4;
+}
+
+.vectorContainer>span {
+    object-fit: contain;
+    width: 100% !important;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1100px) {
+    .vectorContainer {
+        width: 70vh;
+        height: 70vh;
+        /* filter: blur(10vh); */
+    }
+}
+
+.maaOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    z-index: 3;
+}
+
+.maa {
+    z-index: 2;
+    position: fixed;
+    opacity: 0.2;
+    width: 70vw;
+    bottom: -10vw;
+    left: 30px;
+}
