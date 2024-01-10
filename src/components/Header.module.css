@@ -1,8 +1,24 @@
-.main {
-    position: fixed;
+.container {
+    /* position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-bottom: 20px;
+}
+
+.main {
+    background-color: #1d1d1d72;
+    backdrop-filter: blur(20px);
+
+    width: 80vw;
+    max-width: 400px;
+
+    padding: 0px;
+    border-radius: 10px;
+
     display: flex;
     justify-content: center;
     align-items: center;

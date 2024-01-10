@@ -6,11 +6,13 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    background-color: #29292972;
+    background-color: #1d1d1d72;
     backdrop-filter: blur(20px);
 
     padding: 20px;
     border-radius: 10px;
+
+    margin-bottom: 20px;
 }
 
 .mutliSelector {
@@ -56,7 +58,7 @@
     color: rgb(500, 500, 500);
     font-size: 1.2rem;
     font-weight: 800;
-    padding: 5px 0px;
+    padding: 12px 0px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -99,21 +101,21 @@
     /* background-color: #2338f3; */
     background: rgb(99, 232, 14);
     background: linear-gradient(61deg, rgb(75, 174, 13) 0%, rgb(12, 187, 158)100%);
-    filter: saturate(0.2) brightness(0.2);
+    filter: saturate(0.4) brightness(0.2);
 }
 
 .mutliSelectorButton:nth-of-type(2)>.mutliSelectorButtonBackground {
     /* background-color: #2338f3; */
     background: rgb(232, 215, 14);
     background: linear-gradient(61deg, rgb(193, 178, 19) 0%, rgb(205, 134, 19)100%);
-    filter: saturate(0.2) brightness(0.2);
+    filter: saturate(0.4) brightness(0.2);
 }
 
 .mutliSelectorButton:nth-of-type(3)>.mutliSelectorButtonBackground {
     /* background-color: #2338f3; */
     background: rgb(232, 14, 14);
     background: linear-gradient(61deg, rgba(232, 14, 14, 1) 0%, rgba(232, 14, 220, 1) 100%);
-    filter: saturate(0.2) brightness(0.2);
+    filter: saturate(0.4) brightness(0.2);
 }
 
 .mutliSelectorButtonBackgroundSelected {
