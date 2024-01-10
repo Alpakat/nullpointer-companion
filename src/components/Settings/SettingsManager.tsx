@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import styles from './SettingsManager.module.css'
 import classNames from 'classnames'
+import Link from 'next/link'
 
 export default function SettingsManager() {
 	const [selectedOption, setSelectedOption] = useState('Schwer')
@@ -11,6 +12,12 @@ export default function SettingsManager() {
 	const handleInputChange = (event: { target: { name: string; value: string } }) => {
 		setPlayerNames({ ...playerNames, [event.target.name]: event.target.value })
 	}
+
+    const url = new URL("https://maainc.de/game")
+    url.searchParams.set("difficulty", selectedOption)
+    url.searchParams.set("player1", playerNames.player1)
+    url.searchParams.set("player2", playerNames.player2)
+    url.searchParams.set("player3", playerNames.player3)
 
 	return (
 		<>
@@ -41,7 +48,9 @@ export default function SettingsManager() {
 				<input className={styles.input} type="text" name="player3" value={playerNames.player3} onChange={handleInputChange} />
 			</div>
 			<div className={styles.main}>
-				<button className={styles.button}>Spiel starten</button>
+				<Link href={url.toString().split("https://maainc.de")[1] ?? "/game"} style={{width: "100%"}}>
+					<button className={styles.button}>Spiel starten</button>
+				</Link>
 			</div>
 		</>
 	)

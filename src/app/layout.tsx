@@ -1,3 +1,4 @@
+import Background from '@/components/Background'
 import '@/styles/globals.css'
 
 import { Nunito } from 'next/font/google'
