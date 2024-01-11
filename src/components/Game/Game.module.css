@@ -1,0 +1,144 @@
+.main {
+    width: 80vw;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #1d1d1d72;
+    backdrop-filter: blur(20px);
+
+    padding: 20px;
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+}
+
+.playerDisplayGroup {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.playerDisplay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px;
+}
+
+.playerColor {
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.playerColor0 {
+    border: 5px solid #E80E41;
+}
+
+.playerColor0.playerColorActive {
+    background-color: #E80E41;
+}
+
+.playerColor1 {
+    border: 5px solid #95D35E;
+}
+
+.playerColor1.playerColorActive {
+    background-color: #95D35E;
+}
+
+.playerColor2 {
+    border: 5px solid #3AAAE0;
+}
+
+.playerColor2.playerColorActive {
+    background-color: #3AAAE0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.color {
+    /* background-color: #2397f3; */
+    border-radius: 25px;
+    /* border: #2397f3 5px solid; */
+    width: 25px;
+    height: 25px;
+}
+
+.color1{
+    background-color: #E80E41;
+}
+
+.color2{
+    background-color: #95D35E;
+}
+
+.color3{
+    background-color: #3AAAE0;
+}
+
+.button {
+    width: 100%;
+    height: 100%;
+    background: rgb(60, 60, 60);
+    color: white;
+    /* background: linear-gradient(61deg, rgba(22, 232, 14, 1) 0%, rgba(14, 232, 182, 1) 100%); */
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 10px 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    filter: saturate(0.3) hue-rotate(0deg);
+    outline-offset: 0px;
+    transition: outline-offset 0.05s filter 0.5s;
+}
+
+.button:focus-visible {
+    outline-offset: 3px;
+    outline: #ffffff 2px solid;
+    z-index: 2;
+}
+
+.button:hover {
+    filter: saturate(1) hue-rotate(-40deg);
+}
+
+.disabledButton{
+    filter: saturate(0.3) brightness(0.5);
+    cursor: auto;
+}
+
+.disabledButton:hover{
+    filter: saturate(0.3) brightness(0.5);
+}
+
+.weiterButton {
+    background: rgb(99, 232, 14);
+    background: linear-gradient(61deg, rgb(75, 174, 13) 0%, rgb(12, 187, 158)100%);
+    filter: saturate(0.4) brightness(1);
+}
+
+.matchButton {
+    background: rgb(232, 14, 14);
+    background: linear-gradient(61deg, rgba(232, 14, 14, 1) 0%, rgba(232, 14, 220, 1) 100%);
+    filter: saturate(0.4) brightness(1);
+}

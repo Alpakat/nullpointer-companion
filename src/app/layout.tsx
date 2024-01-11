@@ -10,7 +10,7 @@ const nunito = Nunito({
 export const metadata = {
 	title: 'Nullpointer-Companion',
 	description: 'Die App zum Spiel',
-	icons: [{ rel: 'icon', url: '/favicon.ico' }],
+	icons: [{ rel: 'icon', url: '/logo.png' }],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
