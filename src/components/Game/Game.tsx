@@ -30,6 +30,7 @@ export default function Game({ difficulty, players }: { difficulty: 'Schwach' | 
 		setNumbers([newNumber])
 		setColors([newColor])
 		setCurrentRound(0)
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	const generateNewRound = () => {

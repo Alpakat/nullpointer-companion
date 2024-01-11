@@ -171,3 +171,10 @@
     filter: saturate(0.2) brightness(0.5) !important;
     cursor: auto;
 }
+
+.buttonGithub {
+    background: rgb(24, 14, 232);
+    background: linear-gradient(61deg, rgba(24, 14, 232, 1) 0%, rgba(33, 1, 130, 1) 100%) !important;
+    color: white;
+    filter: saturate(0.5) brightness(1);
+}

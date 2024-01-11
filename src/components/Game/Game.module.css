@@ -80,15 +80,15 @@
     height: 25px;
 }
 
-.color1{
+.color1 {
     background-color: #E80E41;
 }
 
-.color2{
+.color2 {
     background-color: #95D35E;
 }
 
-.color3{
+.color3 {
     background-color: #3AAAE0;
 }
 
@@ -122,12 +122,12 @@
     filter: saturate(1) hue-rotate(-40deg);
 }
 
-.disabledButton{
+.disabledButton {
     filter: saturate(0.3) brightness(0.5);
     cursor: auto;
 }
 
-.disabledButton:hover{
+.disabledButton:hover {
     filter: saturate(0.3) brightness(0.5);
 }
 

@@ -65,6 +65,12 @@ export default function SettingsManager() {
 					<button className={classNames(styles.button, styles.buttonDisabled)}>Spiel starten</button>
 				)}
 			</div>
+			<div className={styles.main}>
+				<Link href={'https://github.com/Alpakat/nullpointer-companion'} target={"_blank"} style={{ width: '100%' }}>
+					{' '}
+					<button className={classNames(styles.button, styles.buttonGithub)}>Github</button>
+				</Link>
+			</div>
 		</>
 	)
 }
