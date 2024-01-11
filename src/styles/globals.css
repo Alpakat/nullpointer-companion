@@ -6,6 +6,10 @@ body {
   color: #EEE;
 }
 
+body{
+  margin-top: 20px;
+}
+
 html {
   background-color: black;
 }
