@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import styles from './Game.module.css'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { useKey } from 'react-use'
 
 const newNumberFunction = (difficulty: 'Schwach' | 'Schwer' | 'Schwierig') => {
 	const optionsSchwach = [0, 1, 1, 3, 2, 2]
@@ -72,6 +73,24 @@ export default function Game({ difficulty, players }: { difficulty: 'Schwach' | 
 		}, 1000)
 	}
 
+	useKey(
+		'ArrowLeft',
+		() => {
+			currentRound != 0 && setCurrentRound((e) => e - 1)
+		},
+		{},
+		[currentRound]
+	)
+
+	useKey(
+		'ArrowRight',
+		() => {
+			generateNewRound()
+		},
+		{},
+		[]
+	)
+
 	return (
 		<div>
 			<div className={styles.main}>
@@ -137,7 +156,7 @@ export default function Game({ difficulty, players }: { difficulty: 'Schwach' | 
 			<div className={classNames(styles.main, styles.matchContainer)}>
 				<motion.div animate={{ filter: matchDisplay ? 'blur(8px) saturate(0.3) brightness(0.5)' : 'blur(0px) saturate(1) brightness(1)' }} className={styles.matchOverlay}>
 					{players.map((player, index) => {
-						if(player == undefined || player == '') return null
+						if (player == undefined || player == '') return null
 						return (
 							<button
 								className={classNames(styles.button, styles['button' + index.toString()], currentlyPlayingPlayerIndex == index && styles.disabledButton)}
