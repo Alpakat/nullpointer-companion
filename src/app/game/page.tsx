@@ -9,7 +9,7 @@ type Props = {
 }
 
 export default async function Home({ searchParams }: Props) {
-	// await new Promise((resolve) => setTimeout(resolve, 1000))
+	await new Promise((resolve) => setTimeout(resolve, 1000))
 
 	const difficulty = searchParams.difficulty as string | undefined
 	const players = [searchParams.player1 as string | undefined, searchParams.player2 as string | undefined, searchParams.player3 as string | undefined]
