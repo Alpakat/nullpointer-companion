@@ -14,7 +14,7 @@ export default async function Home({ searchParams }: Props) {
 	if (searchParams.pw !== process.env.PW)
 		return (
 			<main className={styles.main}>
-				<h1>Wrong password</h1> <Background delay={0}></Background>
+				<h1>Falsches Passwort</h1> <Background delay={0}></Background>
 			</main>
 		)
 
