@@ -70,7 +70,7 @@ export default function Game({ difficulty, players }: { difficulty: 'Schwach' | 
 		setMatchDisplay(true)
 		setTimeout(() => {
 			setMatchDisplay(false)
-		}, 1000)
+		}, 5000)
 	}
 
 	useKey(
